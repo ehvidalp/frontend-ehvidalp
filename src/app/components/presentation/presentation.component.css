@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+.min-h-container {
+  min-height: 32rem;
+}
+
+.min-h-container > img {
+  width: 20rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
