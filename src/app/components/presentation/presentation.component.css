@@ -7,7 +7,26 @@
 }
 
 .min-h-container > img {
-  width: 20rem;
+  width: 15rem;
   margin-top: 2rem;
   margin-right: 1rem;
+}
+
+p {
+  max-width: 24rem;
+  text-wrap: pretty;
+}
+
+.stain {
+  animation: rotate linear both;
+  animation-timeline: scroll();
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

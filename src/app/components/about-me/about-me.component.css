@@ -1,3 +1,15 @@
 :host {
   display: block;
 }
+
+img {
+  width: 16rem;
+}
+
+picture {
+  width: 40%;
+}
+
+div {
+  width: 60%;
+}
