@@ -12,5 +12,9 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DropdownComponent {
-  openDropdown = signal(false);
+  expandDropdown = signal(false);
+
+  setDropdownState() {
+    this.expandDropdown.update((state) => !state);
+  }
  }

@@ -1,1 +1,12 @@
-<p>dropdown works!</p>,
+<button [ngClass]="{'active-dropdown': expandDropdown()}" type="button" (click)="setDropdownState()">
+    <ng-content select="[titleDropdown]"></ng-content>
+    <svg [ngClass]="{'rotate': expandDropdown()}" xmlns="http://www.w3.org/2000/svg" width="19" height="7"
+        viewBox="0 0 21 10" fill="none">
+        <path
+            d="M10.0814 9.51562C9.26724 9.51562 8.45304 9.21678 7.83658 8.63018L0.252982 1.41393C-0.0843272 1.09296 -0.0843272 0.561698 0.252982 0.240728C0.590291 -0.0802426 1.14859 -0.0802426 1.4859 0.240728L9.0695 7.45698C9.62781 7.98824 10.5351 7.98824 11.0934 7.45698L18.677 0.240728C19.0143 -0.0802426 19.5726 -0.0802426 19.9099 0.240728C20.2472 0.561698 20.2472 1.09296 19.9099 1.41393L12.3263 8.63018C11.7098 9.21678 10.8956 9.51562 10.0814 9.51562Z"
+            fill="currentColor" />
+    </svg>
+</button>
+<section [ngClass]="{'expand': expandDropdown()}">
+    <ng-content select="[contentDropdon]"></ng-content>
+</section>

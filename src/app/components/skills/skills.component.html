@@ -1,3 +1,16 @@
 <h2 class="subtitle">Skills</h2>
-<p class="text mt-m">My full-stack development capabilities allow me to contribute to all aspects of the software development lifecycle.
+<p class="text mt-m">My full-stack development capabilities allow me to contribute to all aspects of the software
+    development lifecycle.
 </p>
+<div class="container-skills">
+    @for (skill of skills; track $index) {
+    <app-dropdown>
+        <span titleDropdown>{{skill.title}}</span>
+        <div contentDropdon>
+            <span>
+                {{skill.description}}
+            </span>
+        </div>
+    </app-dropdown>
+    }
+</div>
