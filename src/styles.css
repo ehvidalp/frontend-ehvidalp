@@ -8,6 +8,7 @@
   --primary-color: #3b7bfc;
   --white-color: #fff;
   --max-width: 57rem;
+  --font-size-xs: 0.75rem;
   --font-size-sm: 1rem;
   --font-size-md: 1.25rem;
   --font-size-lg: 1.5rem;
@@ -93,6 +94,10 @@ body {
   text-wrap: pretty;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .flex {
   display: flex;
 }
@@ -152,6 +157,14 @@ body {
 
 .mt-xxl {
   margin-top: 4rem;
+}
+
+.mb-xs {
+  margin-bottom: 0.5rem;
+}
+
+.mb-s {
+  margin-bottom: 1rem;
 }
 
 .position-relative {

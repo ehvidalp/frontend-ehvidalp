@@ -1,1 +1,21 @@
-<p>soft-skills works!</p>,
+<h2 class="subtitle mt-m text-center">Soft Skills</h2>
+<section class="flex w-100 align-center">
+    <div>
+        <p class="text mb-s">I believe in open communication, active listening, and proactive problem-solving to achieve
+            successful
+            outcomes.</p>
+        @for (softSkill of softSkills(); track $index) {
+        <span>
+            <svg width="11" height="10" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M8 0C3.584 0 0 3.27718 0 7.31513C0 11.3531 3.584 14.6303 8 14.6303C12.416 14.6303 16 11.3531 16 7.31513C16 3.27718 12.416 0 8 0ZM8 13.1672C4.472 13.1672 1.6 10.5411 1.6 7.31513C1.6 4.08916 4.472 1.46303 8 1.46303C11.528 1.46303 14.4 4.08916 14.4 7.31513C14.4 10.5411 11.528 13.1672 8 13.1672ZM11.104 4.60122L6.4 8.90251L4.896 7.52727C4.584 7.24198 4.08 7.24198 3.768 7.52727C3.456 7.81256 3.456 8.27341 3.768 8.5587L5.84 10.4533C6.152 10.7386 6.656 10.7386 6.968 10.4533L12.24 5.63265C12.552 5.34736 12.552 4.88651 12.24 4.60122C11.928 4.31593 11.416 4.31593 11.104 4.60122Z"
+                    fill="#3B7BFC" />
+            </svg>
+            {{softSkill}}
+        </span>
+        }
+    </div>
+    <picture>
+        <img src="assets/images/ehvidalp-softskills.png" alt="Edward Soft skills">
+    </picture>
+</section>

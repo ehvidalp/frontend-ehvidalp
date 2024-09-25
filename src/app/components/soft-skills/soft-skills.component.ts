@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-soft-skills',
@@ -11,4 +11,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './soft-skills.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SoftSkillsComponent { }
+export class SoftSkillsComponent { 
+  softSkills = signal(['Communication', 'Leadership', 'Team work', 'Critical thinking', 'Creative', 'Problem solving']);
+}
