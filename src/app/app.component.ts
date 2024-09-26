@@ -6,6 +6,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SoftSkillsComponent } from './components/soft-skills/soft-skills.component';
 import { CertificationsComponent } from "./components/certifications/certifications.component";
+import { HeaderComponent } from "./components/header/header.component";
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { CertificationsComponent } from "./components/certifications/certificati
     ProjectsComponent,
     SkillsComponent,
     SoftSkillsComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    HeaderComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
