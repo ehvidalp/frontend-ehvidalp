@@ -1,9 +1,16 @@
 <header>
-    <span>{{'<'+'E d w a r d />'}}</span>
-    <select>
-        <option value="en">EN</option>
-        <option value="es">ES</option>
-    </select>
+    <span>{{'
+        <'+'E d w a r d />'}}
+    </span>
+
+    <div>
+        <select #languageSelect [(ngModel)]="currentLanguage" (change)="changeLanguage($event)">
+            @for (language of listLanguages(); track $index) {
+            <option [value]="language">{{language }}</option>
+            }
+        </select>
+    </div>
+
     <button type="button">
         Light
     </button>
