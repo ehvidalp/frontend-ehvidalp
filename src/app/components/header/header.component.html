@@ -3,12 +3,13 @@
         <'+'E d w a r d />'}}
     </span>
 
-    <div>
+    <div class="position-relative">
         <select #languageSelect [(ngModel)]="currentLanguage" (change)="changeLanguage($event)">
             @for (language of listLanguages(); track $index) {
-            <option [value]="language">{{language }}</option>
+            <option [value]="language">{{ language }}</option>
             }
         </select>
+        <app-icon-world class="mt-xs position-absolute r-0"></app-icon-world>
     </div>
 
     <button type="button">
