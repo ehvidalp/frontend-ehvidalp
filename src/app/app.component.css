@@ -1,0 +1,13 @@
+
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+main {
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+}

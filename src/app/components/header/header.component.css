@@ -1,17 +1,23 @@
 :host {
-  display: block;
+  display: flex;
+  width: 100%;
+  align-self: center;
+  justify-content: center;
 }
 
 header {
-  margin-top: 2.5rem;
+  padding-top: 2rem;
   display: flex;
-  align-items: center;
+  position: fixed;
+  width: 100%;
+  max-width: var(--max-width);
+  background-color: var(--background-color);
+  z-index: 10;
 }
 
 header span:first-child {
-  color: #000;
   font-family: "Poppins", sans-serif;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -27,37 +33,50 @@ header div {
   cursor: pointer;
   width: 4rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
+  margin-right: -0.5rem;
 }
-
 
 select {
   border: none;
   background-color: transparent;
   outline: none;
-  color: #000;
   font-family: "Poppins", sans-serif;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding: 0.5rem;
   cursor: pointer;
-  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
   z-index: 1;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 option {
+  color: black;
   font-family: "Poppins", sans-serif;
-  color: #000;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   padding: 0 0.5rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .language-icon {
   padding-top: 0.5rem;
+}
+
+button {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.change-theme-light {
+  filter: brightness(0.8) invert(1);
 }

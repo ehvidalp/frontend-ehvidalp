@@ -8,12 +8,44 @@
   --font-third-color: #828282;
   --primary-color: #3b7bfc;
   --white-color: #fff;
-  --max-width: 57rem;
+  --max-width: 65rem;
   --font-size-xs: 0.75rem;
   --font-size-sm: 1rem;
   --font-size-md: 1.25rem;
   --font-size-lg: 1.5rem;
   --font-size-xl: 2rem;
   --font-size-xxl: 2.5rem;
+  --background-color: var(--white-color);
 }
 
+body.dark-theme {
+  --background-color: #030c16;
+  --font-color: var(--white-color);
+  --font-secondary-color: white;
+}
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, span, h2, h3, h4, h5, h6, select {
+  color: var(--font-color);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  color: var(--font-color);
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}

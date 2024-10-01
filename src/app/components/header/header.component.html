@@ -9,10 +9,11 @@
             <option [value]="language">{{ language }}</option>
             }
         </select>
-        <app-icon-world class="mt-xs position-absolute r-0"></app-icon-world>
     </div>
 
-    <button type="button">
-        Light
+    <button type="button" (click)="changeTheme()" [ngClass]="{'change-theme-light': isDarkTheme()}"
+        aria-label="Change theme">
+        <ng-lottie [width]="isDarkTheme() ? '2.3rem': '2rem'" [height]="isDarkTheme() ? '2.3rem': '2rem'"
+            [options]="lightDarkIcon" (animationCreated)="animationCreated($event)" class="light-dark-icon" />
     </button>
 </header>
