@@ -3,19 +3,32 @@
 @import 'styles/global.css';
 
 :root {
+  /* colors */
   --font-color: #1e1b1b;
   --font-secondary-color: #696969;
   --font-third-color: #828282;
   --primary-color: #3b7bfc;
   --white-color: #fff;
+  --background-color: var(--white-color);
+  /* sizes */
   --max-width: 65rem;
+  --max-device-sm: 350px;
+  --max-device-md: 768px;
+  --max-device-lg: 1024px;
+  /* margins */
+  --mb-xs: 0.5rem;
+  --mb-sm: 1rem;
+  --mb-md: 1.5rem;
+  --mb-lg: 2rem;
+  --mb-xl: 3rem;
+  --mb-xxl: 4rem;
+  /* fonts */
   --font-size-xs: 0.75rem;
   --font-size-sm: 1rem;
   --font-size-md: 1.25rem;
   --font-size-lg: 1.5rem;
   --font-size-xl: 2rem;
   --font-size-xxl: 2.5rem;
-  --background-color: var(--white-color);
 }
 
 body.dark-theme {
@@ -31,8 +44,8 @@ body.dark-theme {
   box-sizing: border-box;
 }
 
-h1, span, h2, h3, h4, h5, h6, select {
-  color: var(--font-color);
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -46,6 +59,30 @@ body {
   position: relative;
 }
 
-html {
-  scroll-behavior: smooth;
+h1, span, h2, h3, h4, h5, h6, select {
+  color: var(--font-color);
+}
+
+@media screen and (width < 350px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (350px > width < 768px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (768px > width <= 1024px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media screen and (width > 1024px) {
+  body {
+    background-color: yellow;
+  }
 }
