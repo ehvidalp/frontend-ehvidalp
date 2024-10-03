@@ -1,14 +1,10 @@
 <section class="flex w-100">
     <div class="flex flex-column justify-center w-50">
-        <h1 class="title">Hi! I'm </h1>
+        <h1 [translate]="'presentation.hi'" class="title"></h1>
         <h1 class="title">Edward Vidal</h1>
         <h3 class="subtitle subtitle-md mt-xs">Software Engineer</h3>
-        <p class="text mt-sm">
-            Passionate about technology and philosophy, I find inspiration in both to create innovative solutions. 
-        </p>
-        <button class="btn mt-md" type="button">
-            My projects
-        </button>
+        <p [translate]="'presentation.description'" class="text mt-sm"></p>
+        <button [translate]="'presentation.button'" class="btn mt-md" type="button"></button>
     </div>
     <div class="flex flex-column w-50 position-relative flex-center min-h-container">
         <img class="position-absolute z-index-2" src="assets/images/ehvidalp-happy.png" />

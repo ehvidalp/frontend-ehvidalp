@@ -64,6 +64,10 @@
 }
 
 /* default css clases */
+.gap-sm{
+  gap: var(--mb-sm)
+}
+
 .text-center {
   text-align: center;
 }

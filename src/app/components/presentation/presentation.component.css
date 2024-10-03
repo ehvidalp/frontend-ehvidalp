@@ -1,5 +1,6 @@
 :host {
   display: block;
+  box-sizing: border-box;
 }
 
 .min-h-container {
@@ -7,19 +8,53 @@
 }
 
 .min-h-container > img {
-  width: 15rem;
+  width: 17rem;
   margin-top: 2rem;
   margin-right: 1rem;
-}
-
-p {
-  max-width: 24rem;
-  text-wrap: pretty;
 }
 
 .stain {
   animation: rotate linear both;
   animation-timeline: scroll();
+}
+
+p {
+  max-width: 24rem;
+  text-wrap: pretty;
+  padding-right: 0.5rem;
+}
+
+section {
+  box-sizing: border-box;
+}
+
+button {
+  z-index: 5;
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  div {
+    width: 100%;
+  }
+
+  div:last-child {
+    margin-top: -4rem;
+  }
+
+  /* .min-h-container > img {
+    width: 14rem;
+  } */
+}
+
+@media screen and (max-width: 778px) {
+  .min-h-container > img {
+    width: 14rem;
+  }
 }
 
 @keyframes rotate {

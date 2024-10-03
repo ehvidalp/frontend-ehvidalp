@@ -5,8 +5,10 @@
   justify-content: center;
 }
 
+
+
 header {
-  padding-top: 2rem;
+  padding: var(--mb-lg) 0 var(--mb-sm);
   display: flex;
   position: fixed;
   width: 100%;
@@ -80,3 +82,16 @@ button {
 .change-theme-light {
   filter: brightness(0.8) invert(1);
 }
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: var(--mb-lg) var(--mb-sm) var(--mb-sm);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    padding: var(--mb-lg) var(--mb-lg) var(--mb-sm);
+  }
+}
+

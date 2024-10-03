@@ -1,5 +1,11 @@
 {
     "en": "Inglés",
     "es": "Español",
-    "hello": "Hola"
+    "hello": "Hola",
+    "presentation": {
+        "hi": "Hola, soy",
+        "title": "Software Engineer",
+        "description": "Apasionado por la tecnología y la filosofía, encuentro inspiración en ambas para crear soluciones innovadoras.",
+        "button": "Mis proyectos"
+    }
 }

@@ -54,35 +54,23 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  box-sizing: border-box;
   color: var(--font-color);
   position: relative;
+  /* background-color: green; */
 }
 
 h1, span, h2, h3, h4, h5, h6, select {
   color: var(--font-color);
 }
 
-@media screen and (width < 350px) {
-  body {
-    background-color: blue;
-  }
-}
-
-@media screen and (350px > width < 768px) {
+/* @media screen and (max-width: 768px) {
   body {
     background-color: red;
   }
 }
 
-@media screen and (768px > width <= 1024px) {
+@media screen and (max-width: 450px) {
   body {
-    background-color: green;
+    background-color: blue;
   }
-}
-
-@media screen and (width > 1024px) {
-  body {
-    background-color: yellow;
-  }
-}
+} */
