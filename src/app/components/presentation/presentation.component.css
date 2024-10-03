@@ -45,10 +45,6 @@ button {
   div:last-child {
     margin-top: -4rem;
   }
-
-  /* .min-h-container > img {
-    width: 14rem;
-  } */
 }
 
 @media screen and (max-width: 778px) {

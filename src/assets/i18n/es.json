@@ -7,5 +7,9 @@
         "title": "Software Engineer",
         "description": "Apasionado por la tecnología y la filosofía, encuentro inspiración en ambas para crear soluciones innovadoras.",
         "button": "Mis proyectos"
+    },
+    "about-me": {
+        "title": "Sobre mí",
+        "description": "Con 5 años de experiencia en desarrollo de software, entiendo que un producto excepcional requiere una visión holística. Por eso me sumerjo en todas las facetas del proceso creativo, desde el diseño hasta la arquitectura y el desarrollo."
     }
 }

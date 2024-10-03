@@ -15,3 +15,18 @@ picture {
 div {
   width: 60%;
 }
+
+@media screen and (max-width: 778px) {
+  section {
+    margin-top: -6rem;
+  }
+
+  div {
+    width: 100%;
+  }
+
+  picture {
+    width: 0%;
+    visibility: hidden;
+  }
+}

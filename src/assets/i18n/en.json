@@ -7,5 +7,9 @@
         "title": "Software Engineer",
         "description": "Passionate about technology and philosophy, I find inspiration in both to create innovative solutions.",
         "button": "My projects"
+    },
+    "about-me": {
+        "title": "About me",
+        "description": "With 5 years of experience in software development, I understand that an exceptional product requires a holistic vision. That's why I immerse myself in all facets of the creative process, from design to architecture and development."
     }
 }
