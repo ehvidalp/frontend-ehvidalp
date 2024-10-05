@@ -1,3 +1,9 @@
+h2 {
+  margin-top: 8rem;
+}
+
+
+
 :host {
   display: block;
 }
@@ -8,8 +14,19 @@ p {
 
 .container-skills {
   display: grid;
-  margin-top: 1rem;
+  margin-top: var(--mb-md);
   box-sizing: border-box;
   grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-  gap: 1rem;
+  gap: var(--mb-xs);
 }
+
+div > span {
+  font-size: var(--font-size-xs);
+}
+
+@media screen and (max-width: 778px) {
+  h2 {
+    margin-top: var(--mb-sm);
+  }
+}
+

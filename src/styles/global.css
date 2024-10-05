@@ -143,6 +143,10 @@
   margin-bottom: var(--mb-sm);
 }
 
+.pb-sm {
+  padding-bottom: var(--mb-sm);
+}
+
 /* Positions */
 .position-relative {
   position: relative;

@@ -59,8 +59,9 @@ body {
   /* background-color: green; */
 }
 
-h1, span, h2, h3, h4, h5, h6, select {
+h1, p, span, h2, h3, h4, h5, h6, select {
   color: var(--font-color);
+  box-sizing: border-box;
 }
 
 /* @media screen and (max-width: 768px) {

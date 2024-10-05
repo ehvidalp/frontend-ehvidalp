@@ -1,15 +1,36 @@
 {
-    "en": "Inglés",
-    "es": "Español",
-    "hello": "Hola",
-    "presentation": {
-        "hi": "Hola, soy",
-        "title": "Software Engineer",
-        "description": "Apasionado por la tecnología y la filosofía, encuentro inspiración en ambas para crear soluciones innovadoras.",
-        "button": "Mis proyectos"
+  "en": "Inglés",
+  "es": "Español",
+  "hello": "Hola",
+  "presentation": {
+    "hi": "Hola, soy",
+    "title": "Software Engineer",
+    "description": "Apasionado por la tecnología y la filosofía, encuentro inspiración en ambas para crear soluciones innovadoras.",
+    "button": "Mis proyectos"
+  },
+  "about-me": {
+    "title": "Sobre mí",
+    "description": "Con 5 años de experiencia en desarrollo de software, entiendo que un producto excepcional requiere una visión holística. Por eso me sumerjo en todas las facetas del proceso creativo, desde el diseño hasta la arquitectura y el desarrollo."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "description": "Mis capacidades de desarrollo full-stack me permiten contribuir a todos los aspectos del ciclo de vida del desarrollo de software.",
+    "frontend": {
+      "title": "Frontend",
+      "description": "Desarrollo interfaces de usuario atractivas y funcionales con tecnologías como HTML, CSS y JavaScript."
     },
-    "about-me": {
-        "title": "Sobre mí",
-        "description": "Con 5 años de experiencia en desarrollo de software, entiendo que un producto excepcional requiere una visión holística. Por eso me sumerjo en todas las facetas del proceso creativo, desde el diseño hasta la arquitectura y el desarrollo."
+    "backend": {
+      "title": "Backend",
+      "description": "Diseño y desarrollo de servidores y bases de datos eficientes con tecnologías como Node.js y MongoDB."
+    },
+    "devops": {
+      "title": "DevOps",
+      "description": "Automatización de procesos de desarrollo y despliegue con tecnologías como Docker y GitHub Actions."
+    },
+    "databases": {
+      "title": "Bases de datos",
+      "description": "Diseño y optimización de bases de datos relacionales y no relacionales con tecnologías como MySQL y MongoDB."
     }
+  }
 }
+ 

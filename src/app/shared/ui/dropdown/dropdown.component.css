@@ -7,7 +7,7 @@ section {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  margin-top: 1rem;
+  margin-top: var(--mb-sm);;
 }
 
 .expand {
@@ -15,11 +15,12 @@ section {
 }
 
 button {
-  border-radius: 1rem;
+  border-radius: var(--mb-sm);
   border: 1px solid var(--primary-color);
-  background: var(--white-color);
+  background: transparent;
   width: 100%;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
   padding: 0.75rem 1rem;
   color: var(--primary-color);
   font-family: "Poppins" sans-serif;
@@ -28,6 +29,7 @@ button {
   cursor: pointer;
   position: relative;
   transition: background 0.3s ease-in-out;
+
 }
 
 button:hover {

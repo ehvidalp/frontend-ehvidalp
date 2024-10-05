@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { skill } from '@shared/interfaces/skill';
 import { DropdownComponent } from '@shared/ui/dropdown/dropdown.component';
 
@@ -9,6 +10,7 @@ import { DropdownComponent } from '@shared/ui/dropdown/dropdown.component';
   imports: [
     CommonModule,
     DropdownComponent,
+    TranslateModule
   ],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css',
@@ -17,24 +19,24 @@ import { DropdownComponent } from '@shared/ui/dropdown/dropdown.component';
 export class SkillsComponent { 
   skills: skill[] = [
     {
-      title: 'Frontend',
-      description: 'Front-end development is the bridge that connects ideas with end-users, bringing the product to life and ensuring a functional and interactive experience.',
+      key: 'frontend',
       images: ['angular.png'],
+      technologies: ['HTML', 'Css', 'Scss', 'JavaScript', 'TypeScript', 'Angular', 'Vue', 'Figma' ]
     },
     {
-      title: 'Backend',
-      description: 'Back-end development is the foundation of a product, ensuring that the server, database, and application work together seamlessly.',
+      key: 'backend',
       images: ['nodejs.png'],
+      technologies: []
     },
     {
-      title: 'Database',
-      description: 'Database management is essential to store and retrieve data efficiently, ensuring that the product is scalable and performant.',
+      key: 'databases',
       images: ['mongodb.png'],
+      technologies: []
     },
     {
-      title: 'Devops',
-      description: 'DevOps is the practice of combining software development and IT operations to streamline the development process and ensure a high-quality product.',
+      key: 'devops',
       images: [''],
+      technologies: []
     }
   ];
 }

@@ -1,5 +1,5 @@
 export interface skill {
-    title: string;
-    description: string;
+    key: string;
     images: string[];
+    technologies: (string | { certification: string, value: string })[];
 }
