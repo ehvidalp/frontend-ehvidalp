@@ -1,13 +1,18 @@
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 section {
-  padding: 0 18px;
+  padding: var(--mb-sm) 18px 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  margin-top: var(--mb-sm);;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
 }
 
 .expand {
@@ -29,6 +34,7 @@ button {
   cursor: pointer;
   position: relative;
   transition: background 0.3s ease-in-out;
+  box-sizing: border-box;
 
 }
 

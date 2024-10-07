@@ -1,18 +1,18 @@
 <h2 [translate]="'skills.title'" class="subtitle"></h2>
 <p [translate]="'skills.description'" class="text mt-md"></p>
 <div class="container-skills">
-    @for (skill of skills; track $index) {
+    @for (skill of skills; track skill.key) {
     <app-dropdown>
         <span [translate]="'skills.' + skill.key + '.title'" titleDropdown></span>
         <div class="pb-sm" contentDropdon>
-            <span [translate]="'skills.' + skill.key + '.description'"></span>
-            <ol>
+            <span [translate]="'skills.' + skill.key + '.description'" class="text"></span>
+            <ul>
                 @for (technology of skill.technologies; track $index) {
-                <li>
-                    {{ technology}}
+                <li (click)="goToCertification(technology)" [ngClass]="{'shine-golden': technology.certification}">
+                    {{ technology.value }}
                 </li>
                 }
-            </ol>
+            </ul>
         </div>
     </app-dropdown>
     }

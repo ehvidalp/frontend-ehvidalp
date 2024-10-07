@@ -1,11 +1,9 @@
-h2 {
-  margin-top: 8rem;
-}
-
-
-
 :host {
   display: block;
+}
+
+h2 {
+  margin-top: 8rem;
 }
 
 p {
@@ -17,11 +15,7 @@ p {
   margin-top: var(--mb-md);
   box-sizing: border-box;
   grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-  gap: var(--mb-xs);
-}
-
-div > span {
-  font-size: var(--font-size-xs);
+  gap: var(--mb-sm);
 }
 
 @media screen and (max-width: 778px) {
@@ -30,3 +24,42 @@ div > span {
   }
 }
 
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: var(--mb-sm);
+  flex-wrap: wrap;
+}
+
+li {
+  font-family: "Fira Sans", sans-serif;
+  font-size: var(--font-size-sm);
+}
+
+.shine-golden {
+  background: linear-gradient(90deg, #FFD700, #FF8C00, #FFD700);
+  background-size: 200% 200%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 4s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
