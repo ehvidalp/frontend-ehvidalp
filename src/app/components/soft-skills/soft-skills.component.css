@@ -17,18 +17,56 @@ span {
   flex-direction: row;
 }
 
-h2 {
-  margin-bottom: -1.5rem;
+section {
+  margin-top: -1.5rem;
 }
 
 span > svg {
-  margin-right: 0.5rem;
+  margin-right: var(--mb-xs);
 }
 
 picture {
-  margin-left: 2rem;
+  margin-left: var(--mb-lg);
 }
 
 img {
   width: 18rem;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    flex-direction: column;
+    margin-top: var(--mb-md);
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  picture {
+    margin-left: 0;
+  }
+
+  img {
+    max-width: 15rem;
+    width: 100%;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--mb-xs) var(--mb-sm);
+  }
+
+  span {
+    min-width: auto;
+  }
+  /* p {
+    display: flex;
+  } */
+  /* section {
+    display: flex;
+    flex-wrap: wrap;
+  } */
 }

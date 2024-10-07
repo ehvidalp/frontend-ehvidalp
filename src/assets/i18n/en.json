@@ -31,5 +31,15 @@
       "title": "Bases de datos",
       "description": "Diseño y optimización de bases de datos relacionales y no relacionales con tecnologías como MySQL y MongoDB."
     }
+  },
+  "soft-skills": {
+    "title": "Soft skills",
+    "description": "I believe in open communication, active listening, and proactive problem-solving to achieve successful outcomes.",
+    "communication": "Communication",
+    "leadership": "Leadership",
+    "team_work": "Team Work",
+    "critical_thinking": "Critical Thinking",
+    "creative": "Creativity",
+    "problem_solving": "Problem Solving"
   }
 }
