@@ -1,7 +1,7 @@
 {
   "en": "English",
-  "es": "Spanish",
   "hello": "Hello",
+  "es": "Spanish",
   "presentation": {
     "hi": "Hi, I'm",
     "title": "Software Engineer",
@@ -41,5 +41,9 @@
     "critical_thinking": "Critical Thinking",
     "creative": "Creativity",
     "problem_solving": "Problem Solving"
+  },
+  "certification": {
+    "title": "Certifications",
+    "description": "My technical skills are supported by these industry-recognized certifications."
   }
 }

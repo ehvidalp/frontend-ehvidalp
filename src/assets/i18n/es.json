@@ -41,5 +41,9 @@
     "critical_thinking": "Pensamiento crítico",
     "creative": "Creatividad",
     "problem_solving": "Resolución de problemas"
+  },
+  "certification": {
+    "title": "Certificaciones",
+    "description": "Mis habilidades técnicas están respaldadas por estas certificaciones reconocidas por la industria."
   }
 }

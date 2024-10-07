@@ -1,8 +1,15 @@
-<h2 class="subtitle mt-md">Certifications</h2>
+<h2 [translate]="'certification.title'" class="subtitle mt-md"></h2>
 <section class="flex w-100 align-center">
-    <p class="text mt-md">My technical skills are supported by these industry-recognized certifications.</p>
+    <p [translate]="'certification.description'" class="text mt-md"></p>
 
-    <picture>
-        <img src="assets/images/nodejs.png" alt="certifications">
-    </picture>
+    <ul>
+        @for (certification of certifications; track $index) {
+            <li>
+                <a [href]="certification.link" target="_blank" >
+                    <img [src]="'assets/images/' + certification.image" [alt]="certification.name">
+                </a>
+            </li>
+        }
+        
+    </ul>
 </section>
